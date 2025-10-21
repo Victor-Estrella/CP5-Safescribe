@@ -24,18 +24,6 @@ API ASP.NET Core para gestao de notas seguras com autenticacao JWT, controle de 
 - .NET SDK 9.0 ou superior.
 - Opcional: ferramenta REST (curl, Thunder Client, Postman) para exercitar a API.
 
-## Configuracao
-1. Copie `appsettings.Development.json` se precisar de variacoes por ambiente.
-2. Defina o bloco `Jwt` com chave forte e segredos adequados:
-	 ```json
-	 "Jwt": {
-		 "Key": "mude-esta-chave",
-		 "Issuer": "SafeScribe",
-		 "Audience": "SafeScribeUsers"
-	 }
-	 ```
-	 Em producao, prefira variaveis de ambiente (`DOTNET_`) ou Azure Key Vault.
-
 ## Executando o projeto
 1. Restaure dependencias: `dotnet restore`.
 2. Rode a API: `dotnet run --project SafeScribe.csproj --launch-profile https`.
