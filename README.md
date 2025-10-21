@@ -10,6 +10,7 @@ API ASP.NET Core para gestao de notas seguras com autenticacao JWT, controle de 
 - Registro, login e logout com tokens JWT que expiram em 1 hora.
 - Controle de acesso por roles (`Leitor`, `Editor`, `Admin`) aplicado no pipeline de autorizacao.
 - CRUD de notas em memoria com validacoes para proprietarios e administradores.
+- Associacao automatica do `UserId` a partir da claim do token JWT, impedindo forjar notas para outros utilizadores.
 - Middleware que consulta blacklist de tokens antes de autorizar cada request.
 - Documentacao interactiva via Swagger em `/swagger`.
 
@@ -46,7 +47,7 @@ API ASP.NET Core para gestao de notas seguras com autenticacao JWT, controle de 
 | POST | `/api/v1/auth/registrar` | Publico | Registra utilizador em memoria |
 | POST | `/api/v1/auth/login` | Publico | Autentica e retorna token JWT |
 | POST | `/api/v1/auth/logout` | Qualquer utilizador autenticado | Invalida token atual |
-| POST | `/api/v1/notas` | Roles `Editor`, `Admin` | Cria nota para si ou (admin) outro utilizador |
+| POST | `/api/v1/notas` | Roles `Editor`, `Admin` | Cria nota vinculada ao utilizador autenticado |
 | GET | `/api/v1/notas/{id}` | Qualquer autenticado | Consulta nota se for dono ou admin |
 | PUT | `/api/v1/notas/{id}` | Roles `Editor`, `Admin` | Atualiza nota se for dono ou admin |
 | DELETE | `/api/v1/notas/{id}` | Role `Admin` | Remove nota |

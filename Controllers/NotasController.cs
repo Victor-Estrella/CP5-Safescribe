@@ -43,12 +43,7 @@ public class NotasController : ControllerBase
             return Unauthorized(new { mensagem = "Utilizador inválido." });
         }
 
-        var role = ObterRole();
-        var ownerId = role == UserRole.Admin && request.UserId.HasValue && request.UserId.Value != Guid.Empty
-            ? request.UserId.Value
-            : userId;
-
-        var note = await _noteService.CreateAsync(ownerId, request);
+        var note = await _noteService.CreateAsync(userId, request);
         // Usa rota nomeada para evitar falhas na geração de URL
         return CreatedAtRoute("GetNotaById", new { id = note.Id }, Mapear(note));
     }
