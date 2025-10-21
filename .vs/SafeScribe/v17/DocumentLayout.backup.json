@@ -1,21 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "F:\\SafeScribe\\SafeScribe\\",
+  "WorkspaceRootPath": "F:\\SafeScribe\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B379E025-7320-45C9-8FA2-D3F6EF5DE03D}|SafeScribe.csproj|f:\\safescribe\\safescribe\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B379E025-7320-45C9-8FA2-D3F6EF5DE03D}|SafeScribe.csproj|f:\\safescribe\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B379E025-7320-45C9-8FA2-D3F6EF5DE03D}|SafeScribe.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B379E025-7320-45C9-8FA2-D3F6EF5DE03D}|SafeScribe.csproj|f:\\safescribe\\safescribe\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B379E025-7320-45C9-8FA2-D3F6EF5DE03D}|SafeScribe.csproj|f:\\safescribe\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B379E025-7320-45C9-8FA2-D3F6EF5DE03D}|SafeScribe.csproj|solutionrelative:services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B379E025-7320-45C9-8FA2-D3F6EF5DE03D}|SafeScribe.csproj|f:\\safescribe\\safescribe\\dtos\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B379E025-7320-45C9-8FA2-D3F6EF5DE03D}|SafeScribe.csproj|f:\\safescribe\\dtos\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B379E025-7320-45C9-8FA2-D3F6EF5DE03D}|SafeScribe.csproj|solutionrelative:dtos\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B379E025-7320-45C9-8FA2-D3F6EF5DE03D}|SafeScribe.csproj|f:\\safescribe\\safescribe\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B379E025-7320-45C9-8FA2-D3F6EF5DE03D}|SafeScribe.csproj|f:\\safescribe\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B379E025-7320-45C9-8FA2-D3F6EF5DE03D}|SafeScribe.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -32,9 +32,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "TokenService.cs",
-              "DocumentMoniker": "F:\\SafeScribe\\SafeScribe\\Services\\TokenService.cs",
+              "DocumentMoniker": "F:\\SafeScribe\\Services\\TokenService.cs",
               "RelativeDocumentMoniker": "Services\\TokenService.cs",
-              "ToolTip": "F:\\SafeScribe\\SafeScribe\\Services\\TokenService.cs",
+              "ToolTip": "F:\\SafeScribe\\Services\\TokenService.cs",
               "RelativeToolTip": "Services\\TokenService.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -44,9 +44,9 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "LoginRequestDto.cs",
-              "DocumentMoniker": "F:\\SafeScribe\\SafeScribe\\Dtos\\LoginRequestDto.cs",
+              "DocumentMoniker": "F:\\SafeScribe\\Dtos\\LoginRequestDto.cs",
               "RelativeDocumentMoniker": "Dtos\\LoginRequestDto.cs",
-              "ToolTip": "F:\\SafeScribe\\SafeScribe\\Dtos\\LoginRequestDto.cs",
+              "ToolTip": "F:\\SafeScribe\\Dtos\\LoginRequestDto.cs",
               "RelativeToolTip": "Dtos\\LoginRequestDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -56,9 +56,9 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "AuthController.cs",
-              "DocumentMoniker": "F:\\SafeScribe\\SafeScribe\\Controllers\\AuthController.cs",
+              "DocumentMoniker": "F:\\SafeScribe\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
-              "ToolTip": "F:\\SafeScribe\\SafeScribe\\Controllers\\AuthController.cs",
+              "ToolTip": "F:\\SafeScribe\\Controllers\\AuthController.cs",
               "RelativeToolTip": "Controllers\\AuthController.cs",
               "ViewState": "AgIAACMAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -68,11 +68,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "F:\\SafeScribe\\SafeScribe\\Program.cs",
+              "DocumentMoniker": "F:\\SafeScribe\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "F:\\SafeScribe\\SafeScribe\\Program.cs",
+              "ToolTip": "F:\\SafeScribe\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAAAGMAAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAAAG4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-21T01:49:57.202Z",
               "EditorCaption": ""

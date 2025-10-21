@@ -110,5 +110,31 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SafeScribe.Controllers.UsuariosController",
+    "Method": "ObterTodosAsync",
+    "RelativePath": "api/v1/usuarios",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SafeScribe.Controllers.UsuariosController",
+    "Method": "ObterPorIdAsync",
+    "RelativePath": "api/v1/usuarios/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

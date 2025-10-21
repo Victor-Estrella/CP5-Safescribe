@@ -1,6 +1,8 @@
 using System.Text;
+using System.Text.Json;
 using System.Text.Json.Serialization;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Http;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using SafeScribe.Services;
@@ -51,6 +53,13 @@ builder.Services
                 // Executa depois da falha para enriquecer logs
                 Console.WriteLine($"[JWT] Challenge: Error={context.Error}, Desc={context.ErrorDescription}");
                 return Task.CompletedTask;
+            },
+            OnForbidden = context =>
+            {
+                var payload = JsonSerializer.Serialize(new { mensagem = "Permissão insuficiente para realizar esta ação." });
+                context.Response.StatusCode = StatusCodes.Status403Forbidden;
+                context.Response.ContentType = "application/json";
+                return context.Response.WriteAsync(payload);
             },
             OnMessageReceived = context =>
             {

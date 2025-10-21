@@ -1,6 +1,7 @@
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SafeScribe.Dtos;
 using SafeScribe.Models;
@@ -64,7 +65,7 @@ public class NotasController : ControllerBase
         var role = ObterRole();
         if (role != UserRole.Admin && note.UserId != userId)
         {
-            return Forbid();
+            return StatusCode(StatusCodes.Status403Forbidden, new { mensagem = "Permissão insuficiente para aceder a esta nota." });
         }
 
         return Ok(Mapear(note));
@@ -87,7 +88,7 @@ public class NotasController : ControllerBase
         var role = ObterRole();
         if (role != UserRole.Admin && note.UserId != userId)
         {
-            return Forbid();
+            return StatusCode(StatusCodes.Status403Forbidden, new { mensagem = "Permissão insuficiente para alterar esta nota." });
         }
 
         note = await _noteService.UpdateAsync(id, request);

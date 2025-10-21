@@ -1,5 +1,6 @@
 using System.Collections.Concurrent;
 using System.IdentityModel.Tokens.Jwt;
+using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using Microsoft.IdentityModel.Tokens;
@@ -137,5 +138,17 @@ public class TokenService : ITokenService
             signingCredentials: signingCredentials);
 
         return new JwtSecurityTokenHandler().WriteToken(token);
+    }
+
+    public Task<IEnumerable<User>> GetUsersAsync()
+    {
+        var snapshot = _users.Values.ToArray();
+        return Task.FromResult<IEnumerable<User>>(snapshot);
+    }
+
+    public Task<User?> GetByIdAsync(Guid id)
+    {
+        var user = _users.Values.FirstOrDefault(u => u.Id == id);
+        return Task.FromResult(user);
     }
 }

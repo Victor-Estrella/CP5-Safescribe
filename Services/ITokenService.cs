@@ -15,7 +15,17 @@ public interface ITokenService
     Task LogoutAsync(string token);
 
     /// <summary>
-    /// Verifica se o token está inválido (blacklist).
+    /// Verifica se o token estï¿½ invï¿½lido (blacklist).
     /// </summary>
     bool IsTokenBlacklisted(string token);
+
+    /// <summary>
+    /// Recupera todos os utilizadores conhecidos pelo sistema.
+    /// </summary>
+    Task<IEnumerable<User>> GetUsersAsync();
+
+    /// <summary>
+    /// Procura um utilizador pelo identificador.
+    /// </summary>
+    Task<User?> GetByIdAsync(Guid id);
 }
