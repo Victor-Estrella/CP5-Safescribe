@@ -30,7 +30,7 @@ API ASP.NET Core para gestao de notas seguras com autenticacao JWT, controle de 
 1. Restaure dependencias: `dotnet restore`.
 2. Rode a API: `dotnet run --project SafeScribe.csproj --launch-profile https`.
 3. A API escuta por padrao em `https://localhost:7202` (HTTP em `http://localhost:5006`).
-4. Acesse `https://localhost:7202/swagger` para explorar e testar endpoints com JWT.
+4. Acesse `https://localhost:7202/swagger/index.html` para explorar e testar endpoints com JWT.
 
 ## Fluxo de uso sugerido
 1. `POST /api/v1/auth/registrar` cria utilizador novo informando `username`, `password` e `role` (padrão `Leitor`).
